@@ -1,8 +1,10 @@
 # FrontEndFramework
 FrontEndFramework
 
-# My Infomation 
+## My Infomation 
 * Name : Trung
 * Email : trungltgcs16028@fpt.edu.vn
 * Soft skill : HTML , CSS
 * Alias : Software Engineering
+
+## Semantic Commit Message
