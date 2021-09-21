@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 08</title>
+</head>
+
+<body>
+
+    <h1>Caculate 2 number</h1>
+
+    <div>
+        <label>Input value 1</label>
+
+        <input type="text" id="num1" />
+    </div>
+
+    <div>
+        <label>Input value 2</label>
+
+        <input type="text" id="num2" />
+    </div>
+
+    <div>
+        <button type="button" id="plus">Cộng</button>
+        <button type="button" id="minus">Trừ</button>
+        <button type="button" id="nhan">Nhân</button>
+        <button type="button" id="chia">Chia</button>
+    </div>
+
+
+    <div>
+        Ket qua : <span></span>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("div").css("margin","5px");
+
+            $("#plus").click(function () {
+                var value1 = parseInt($("#num1").val());
+                var value2 = parseInt($("#num2").val());
+
+                $("span").text(value1 + value2);
+            });
+
+            $("#minus").click(function () {
+                var value1 = parseInt($("#num1").val());
+                var value2 = parseInt($("#num2").val());
+
+                $("span").text(value1 - value2);
+            });
+
+            $("#nhan").click(function () {
+                var value1 = parseInt($("#num1").val());
+                var value2 = parseInt($("#num2").val());
+
+                $("span").text(value1 * value2);
+            });
+
+
+            $("#chia").click(function () {
+                var value1 = parseInt($("#num1").val());
+                var value2 = parseInt($("#num2").val());
+
+                if(value2 == 0){
+                    $("span").text("Lỗi chia Zero");
+                }else{
+                    $("span").text(value1 / value2);
+                }
+
+                
+            });
+
+           
+        });
+    </script>
+</body>
+
+</html>

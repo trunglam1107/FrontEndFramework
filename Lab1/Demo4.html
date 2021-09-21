@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul id="list">
+        <li class="a">Item</li>
+        <li class="a">Item</li>
+        <li class="b">Item</li>
+        <li class="b">Item</li>
+        <li class="a">Item</li>
+        <li class="a">Item</li>
+        <li class="b">Item</li>
+        <li class="b">Item</li>
+        
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("li:first").css("border","1px solid #cc3366");
+            $("li:last").css("border","1px solid #33cc66");
+            $("li:even").css("background-color","#33cccc");
+            $("li:eq(4)").css("color","#cc3366");
+        });
+    </script>
+</body>
+</html>

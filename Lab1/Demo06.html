@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo 06</title>
+</head>
+
+<body>
+
+<h1>List Of Item</h1>
+    <div>This is item 1</div>
+    <div>This is item 2</div>
+    <div>This is item 3</div>
+    <div>This is item 4</div>
+    <div>This is item 5</div>
+   
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("div").each(function(){
+                $(this).css("color","red");
+            });
+        });
+    </script>
+</body>
+
+</html>

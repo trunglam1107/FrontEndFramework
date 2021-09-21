@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery 1</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            // $("p").click(function(){
+            //     alert("The paragraph was clicked");
+            // });
+
+            // $("#p1").mouseover(function(){
+            //     alert("You entered p1!");
+            // });
+
+            // $("#hide").click(function(){
+            //     $("p").hide();
+            // });
+
+            // $("#show").click(function(){
+            //     $("p").show();
+            // });
+
+            // $("button").click(function(){
+
+            //     $("div").animate({right:'250px'});
+
+            // });
+
+
+            // $("button").click(function () {
+            //     $("p").hide("slow", function () {
+            //         alert("The p is now hiden");
+            //     });
+            // });
+
+
+            $("#btn1").click(function(){
+                alert("Text : " + $("#test").text());
+            });
+
+            $("#btn2").click(function(){
+                alert("HTML : " + $("#test").html());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- Jquery Event -->
+    <!-- P selector click  -->
+    <!-- <p>Click on this paragraph</p> -->
+
+    <!-- P has id=p1 selector mouseover  -->
+
+    <!-- <p id="p1">Enter this paragraph</p> -->
+
+    <!-- End Jquery Event -->
+
+    <!-- Effect hide , show -->
+
+    <!-- <p>If you click on the "Hide button , I will dissapear"</p>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button> -->
+
+    <!-- End Effect -->
+
+
+    <!-- Jquery animate -->
+
+    <!-- <div>
+        Animate jquery
+    </div> -->
+
+    <!-- <p>This is the paragraph</p>
+
+    <button>Click slide div</button> -->
+
+    <!-- End Jquery Animate -->
+
+    <!-- Jquery Html -->
+
+    <p id="test">Đây là jquery html</p>
+
+    <button id="btn1">Click alert text</button>
+
+    <button id="btn2">Click alert html</button>
+
+    <!-- End  -->
+</body>
+
+</html>
