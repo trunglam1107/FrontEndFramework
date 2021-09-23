@@ -1,5 +1,17 @@
-[
+[{
+        "id": 1,
+        "name": "Iphone"
+    },
     {
-        
+        "id": 2,
+        "name": "Ipad"
+    },
+    {
+        "id": 3,
+        "name": "Macbook"
+    },
+    {
+        "id": 4,
+        "name": "Samsung"
     }
 ]
